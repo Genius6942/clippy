@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  overflow: hidden;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+}
+
+.bungee {
+  font-family: "Bungee Shade", cursive;
+}
+.firacode {
+  font-family: "Fira Code", monospace;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+*:not(input),
+::before,
+::after {
+  transition: all 0.2s ease;
+}
+
+*:focus-visible {
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  appearance: none;
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(15 23 42);
+  margin: 2px;
+  width: 8px;
+  border-radius: 8px;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(0 0 0 / 20%);
+}
+
+.milkdown h1, .milkdown h2, .milkdown h3, .milkdown h4, .milkdown h5, .milkdown h6, .milkdown p, .milkdown a, .milkdown strong, .milkdown em, .milkdown ul, .milkdown ol, .milkdown li, .milkdown code {
+  color: white !important;
+}
+
+.milkdown a {
+	text-decoration: underline;
+}
+
+/* @layer components {
+  .markdown, .markdown * {
+    @apply text-white;
+  }
+} */
